@@ -17,10 +17,11 @@
 # Release name
 PRODUCT_RELEASE_NAME := judyln
 
-$(call inherit-product, build/target/product/embedded.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+#$(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+#$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/judyln/device.mk)
